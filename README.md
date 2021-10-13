@@ -1,5 +1,5 @@
 # Gitify Flutter App
-I have made this app using flutter app framework which integrates betweeen github using gihub public API. By using this app we can access repos, profile image, email, followers anf following of the github user.
+I have made this app using flutter app framework which integrates between GitHub using GitHub public API. By using this app we can access repos, profile image, email, followers and following of the GitHub user.
 
 <!-- ![Screenshot_20211013-140619](https://user-images.githubusercontent.com/47942129/137103817-b0b40bb5-3713-449d-bda9-67a43acbbf4c.jpg) -->
 <!-- <img src="https://user-images.githubusercontent.com/47942129/137103817-b0b40bb5-3713-449d-bda9-67a43acbbf4c.jpg" width="300">
