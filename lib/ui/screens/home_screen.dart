@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          backgroundColor: Colors.amberAccent,
+          backgroundColor: Colors.amber,
           backwardsCompatibility: false,
           brightness: Brightness.light,
           title: Center(
@@ -42,15 +42,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          actions: [
-            IconButton(
-                icon: Icon(Icons.lightbulb),
-                onPressed: () {
-                  Get.isDarkMode
-                      ? Get.changeTheme(ThemeData.light())
-                      : Get.changeTheme(ThemeData.dark());
-                })
-          ],
+          // actions: [
+          //   IconButton(
+          //       icon: Icon(Icons.lightbulb),
+          //       onPressed: () {
+          //         Get.isDarkMode
+          //             ? Get.changeTheme(ThemeData.light())
+          //             : Get.changeTheme(ThemeData.dark());
+          //       })
+          // ],
         ),
         body: Center(
             child: Container(

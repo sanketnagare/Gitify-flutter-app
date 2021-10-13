@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: UserProvider()),
         ChangeNotifierProvider.value(value: RepositoriesProvider()),
       ],
-      child: GetMaterialApp(
-        //debugShowCheckedModeBanner: false,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Gitify',
         darkTheme: ThemeData.dark(),
         themeMode: ThemeMode.system,

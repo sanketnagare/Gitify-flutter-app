@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gitify/ui/screens/user_details_screen.dart';
-import 'package:gitify/error_controllers/test_controller.dart';
 import 'package:gitify/providers/user_provider.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:intl/intl.dart';
 
 
 class UserNameSearch extends StatefulWidget {
@@ -90,23 +91,25 @@ class _UserNameSearchState extends State<UserNameSearch> {
                       height: 10,
                     ),
                     //ignore: deprecated_member_use
-                    Container(
-                      width: 150,
-                      margin: EdgeInsets.fromLTRB(100, 00, 100, 00),
-                      // margin: EdgeInsets.symmetric(
-                      //     horizontal: 60, vertical: 5),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(70),
-                        color: Colors.amber,
+                    Center(
+                      child: Container(
+                        width: 150,
+                        margin: EdgeInsets.fromLTRB(100, 00, 100, 00),
+                        // margin: EdgeInsets.symmetric(
+                        //     horizontal: 60, vertical: 5),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(70),
+                          color: Colors.amber,
+                        ),
+                        child: MaterialButton(
+                            onPressed: ()   {
+                              submit();
+                            },
+                            child: Text(
+                              'Check',
+                              style: TextStyle(color: Colors.black, fontSize: 18),
+                            )),
                       ),
-                      child: MaterialButton(
-                          onPressed: ()   {
-                            submit();
-                          },
-                          child: Text(
-                            'Check',
-                            style: TextStyle(color: Colors.black, fontSize: 18),
-                          )),
                     ),
                     SizedBox(
                       height: 20,

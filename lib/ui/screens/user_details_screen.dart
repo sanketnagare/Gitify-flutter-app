@@ -17,7 +17,7 @@ class UserDetailsScreen extends StatefulWidget {
   _UserDetailsScreenState createState() => _UserDetailsScreenState();
 }
 
-class _UserDetailsScreenState extends State<UserDetailsScreen>  {
+class _UserDetailsScreenState extends State<UserDetailsScreen> {
   var _init = true;
   var _isLoading = false;
 
@@ -319,107 +319,6 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>  {
                     height: 10,
                   ),
 
-//                   Container(
-//                     height: 1,
-//                     color: Colors.grey[300],
-//                   ),
-//                   SizedBox(
-//                     height: 10,
-//                   ),
-//                   Padding(
-//                     padding: const EdgeInsets.all(13.0),
-//                     child: Row(
-//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                       children: <Widget>[
-//                         Row(
-//                           children: <Widget>[
-//                             Image.asset('assets/images/user-shield.png'),
-//                             Padding(
-//                               padding: const EdgeInsets.only(left: 8.0),
-//                               child: Text(
-//                                 'Followings',
-//                                 style: textStyle,
-//                               ),
-//                             ),
-//                           ],
-//                         ),
-//                         Text(
-//                           user.user!.followings.toString(),
-//                           style: textStyle,
-//                         ),
-//                       ],
-//                     ),
-//                   ),
-//                   Padding(
-//                     padding: const EdgeInsets.all(13.0),
-//                     child: Row(
-//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                       children: <Widget>[
-//                         Row(
-// //                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                           children: <Widget>[
-//                             Image.asset('assets/images/github-2.png'),
-//                             Padding(
-//                               padding: const EdgeInsets.only(left: 8.0),
-//                               child: Text(
-//                                 'Followers',
-//                                 style: textStyle,
-//                               ),
-//                             ),
-//                           ],
-//                         ),
-//                         Text(
-//                           user.user!.followers.toString(),
-//                           style: textStyle,
-//                         ),
-//                       ],
-//                     ),
-//                   ),
-//                   SizedBox(
-//                     height: 5,
-//                   ),
-//                   Container(
-//                     height: 1,
-//                     color: Colors.grey[300],
-//                   ),
-//                   SizedBox(
-//                     height: 5,
-//                   ),
-                  // InkWell(
-                  //   onTap: () {
-                  //     Navigator.of(context).push(MaterialPageRoute(
-                  //         builder: (ctx) => RepositorieScreen(
-                  //             user.user!.username.toString())));
-                  //   },
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.all(13.0),
-                  //     child: InkWell(
-                  //       // onTap: () {
-                  //       //   Navigator.of(context).push(MaterialPageRoute(
-                  //       //       builder: (ctx) => RepositiriesScreen(user.user!.username)));
-                  //       // },
-                  //       child: Row(
-                  //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //         children: <Widget>[
-                  //           Row(
-                  //             children: <Widget>[
-                  //               Image.asset(
-                  //                   'assets/images/user-male-circle.png'),
-                  //               Padding(
-                  //                 padding: const EdgeInsets.only(left: 8.0),
-                  //                 child: Text('Public Repositries',
-                  //                     style: textStyle),
-                  //               ),
-                  //             ],
-                  //           ),
-                  //           Text(user.user!.public_repos.toString(),
-                  //               style: textStyle),
-                  //         ],
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
-
                   Container(
                     color: Colors.white,
                     child: Row(
@@ -462,24 +361,32 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>  {
                             ),
                           ),
                         ),
-                        //   Material(
-                        //   child: GestureDetector(
-                        //     onTap: () {
-                        //         Navigator.of(context).push(MaterialPageRoute(
-                        //         builder: (ctx) => RepositorieScreen(
-                        //         user.user!.username.toString())));
-                        //     },
-                        //     // child: ClipRRect(
-                        //     //   borderRadius: BorderRadius.circular(20.0),
-                        //       child: Image.asset('assets/images/repos.jpg',
-                        //           width: 100.0, height: 130.0,
-                        //           fit: BoxFit.fitHeight,),
-                        //  ),
-                        //   ),
+
+
                       ],
                     ),
-                  )
-
+                  ),
+                  Container(
+                    color: Colors.white,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Material(
+                          child: Text('Repos',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),)
+                        ),
+                        Material(
+                          child: Text('friends',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),
+                        ),
+                  )])),
 //                   SizedBox(
 //                     height: 5,
 //                   ),

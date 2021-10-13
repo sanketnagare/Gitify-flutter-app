@@ -3,7 +3,7 @@ import 'package:flutter/scheduler.dart';
 class User {
   String? username;
   String? name;
-  String? imageUrl;
+  String imageUrl;
   int? followings;
   int? followers;
   int? public_repos;
@@ -16,7 +16,7 @@ class User {
 
   User({
     this.username,
-    this.imageUrl,
+    required this.imageUrl,
     this.followings,
     this.followers,
     this.public_repos,
